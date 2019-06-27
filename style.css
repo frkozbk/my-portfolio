@@ -50,6 +50,12 @@ nav {
 
 #menu a {
     font-size: 1.3rem;
+    color: #8c43ff;
+}
+
+#menu a:hover,
+#menu a:active {
+    color: #b190e6fc;
 }
 
 #burger {
