@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+nav {
+
+    padding: 1.4rem 10px;
+
+}
+
+.container {
+    max-width: 1344px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding: 0px 50px;
+
+}
+
+#logo {
+    font-size: 60px;
+    color: #8c43ff;
+}
+
+#menu {
+    display: flex;
+
+}
+
+#menu li {
+    margin-left: 20px;
+
+}
+
+#menu a {
+    font-size: 1.3rem;
+}
+
+#burger {
+    display: none;
+    cursor: pointer;
+    font-size: 26px;
+    color: #8c43ff;
+    user-select: none;
+}
+
+.resize {
+    display: none;
+    justify-content: center;
+    align-items: baseline
+}
+
+#resize-menu li {
+    margin-bottom: 30px;
+}
+
+.open {
+    display: flex;
+}
+
+#hero-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero-container h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#hero-container h3 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#hero-image {
+    max-width: 100%;
+    overflow: none;
+}
+
+#about div {
+    padding-bottom: 20px;
+}
+
+#about-me {
+    margin-top: 2px;
+    height: 400px;
+    background-color: #8c43ff;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#about-me h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about-me h3 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.grid-container {
+    margin-bottom: 20px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: -60px;
+    max-width: 1344px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "front-end html css bootstrap""front-end javascript react Sass""backend Nodejs express MongoDB""backend Mongoose JWT RestFull";
+}
+
+.front-end {
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: front-end;
+}
+
+.backend {
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: backend;
+}
+
+.html {
+    border-left: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: html;
+}
+
+.css {
+    border-left: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: css;
+}
+
+.bootstrap {
+    border-left: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: bootstrap;
+}
+
+.react {
+    border-left: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: react;
+}
+
+.javascript {
+    border-left: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: javascript;
+}
+
+.Nodejs {
+    border-left: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: Nodejs;
+}
+
+.express {
+    border-left: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: express;
+}
+
+.MongoDB {
+    border-left: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: MongoDB;
+}
+
+.Sass {
+    border-left: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: Sass;
+}
+
+.Mongoose {
+    border-left: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: Mongoose;
+}
+
+.JWT {
+    border-left: 1px solid #e8e8e8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: JWT;
+}
+
+.RestFull {
+    border-left: 1px solid #e8e8e8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    grid-area: RestFull;
+}
+
+#projects h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Projects1 Project2""Project3 Projects4";
+    margin-bottom: 50px;
+}
+
+.projects-container .container {
+    padding: 0;
+}
+
+.projects-container figure {
+    border: 1px solid #e8e8e8;
+    border-radius: 15px;
+}
+
+.projects-container figure img {
+    max-width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+.Projects1 {
+    grid-area: Projects1;
+}
+
+.Project2 {
+    grid-area: Project2;
+}
+
+.Project3 {
+    grid-area: Project3;
+}
+
+.Projects4 {
+    grid-area: Projects4;
+}
+
+footer {
+    display: flex;
+    height: 200px;
+    background-color: #8c43ff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h1 {
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+footer .contact {
+    display: flex;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+
+}
+
+footer a:hover {
+    background-color: white;
+    color: #8c43ff;
+}
+
+@media screen and (min-width:1900) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:1472px) {
+    .container {
+        max-width: 1344px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+@media screen and (max-width:1088px) {
+    .container {
+        max-width: 960px;
+    }
+
+
+}
+
+@media screen and (min-width:1051px) {
+    .resize {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    #burger {
+        display: block;
+    }
+
+
+
+    #menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "front-end""html""css""bootstrap"
+            "javascript""react""Sass""backend""Nodejs""express""MongoDB""Mongoose"
+            "JWT""RestFull";
+    }
+
+    .grid-container div {
+        border-bottom: 1px solid #e8e8e8;
+        border-right: none;
+        border-left: none;
+    }
+
+    .projects-container {
+        grid-template-rows: none;
+        grid-template-columns: 1fr;
+        grid-template-areas: "Project1""Project2""Project3""Project4"
+    }
+}
